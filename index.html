@@ -105,6 +105,7 @@ section.block{padding:72px 0}
 section.block h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:700;max-width:18em}
 section.block .sub{color:var(--muted);max-width:40em;margin:14px 0 36px}
 .alt{background:var(--surface);border-block:1px solid var(--line)}
+section.block.rose{background:color-mix(in srgb,#fce7f3 38%,var(--surface));border-block:1px solid color-mix(in srgb,#f9a8d4 30%,var(--line))}
 
 /* lifecycle: truly sequential, so it is numbered */
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:0;counter-reset:s}
@@ -216,7 +217,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     </div>
   </section>
 
-  <section class="block alt" id="digital-production">
+  <section class="block alt rose" id="digital-production">
     <div class="wrap">
       <h2>Make production processes more visible and efficient</h2>
       <p class="sub">When production records are spread across paper forms and standalone files, it can be difficult to understand where time, materials or capacity are being lost. Connect shop-floor activity with equipment and product information to build a more reliable view of operations and identify where improvement efforts can have the greatest impact.</p>
