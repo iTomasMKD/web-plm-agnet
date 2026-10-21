@@ -8,6 +8,6 @@ Open `index.html` in a browser.
 
 ## Deploy
 
-The `Deploy to GitHub Pages` workflow publishes this site from the `main` branch. Once GitHub Pages is enabled for the repository, every push to `main` deploys the site to:
+GitHub Pages publishes the root of the `main` branch. Every push to `main` updates the site at:
 
 https://itomasmkd.github.io/web-plm-agnet/
