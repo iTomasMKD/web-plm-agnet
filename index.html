@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agentra – Lifecycle Management Platform for AI Agents</title>
+
+<!-- SEO metadata -->
+<meta name="description" content="Manage the full lifecycle of AI agents: design, test, deploy, monitor and retire them on Azure, AWS, on-premises or personal servers. Built for manufacturing, automotive, energy, finance and healthcare.">
+<meta name="keywords" content="Agentra, AI agent platform, AI agent lifecycle management, PLM for AI agents, AI agent deployment, AI agent monitoring, enterprise AI agents, on-premises AI agents, Azure AI agents, AWS AI agents, industrial automation AI">
+<meta name="author" content="Agentra">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#0b2a6f">
+<link rel="canonical" href="https://itomasmkd.github.io/web-plm-agnet/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Agentra">
+<meta property="og:title" content="Agentra – Lifecycle Management for AI Agents">
+<meta property="og:description" content="Design, deploy, monitor and retire AI agents across cloud, on-premises and personal servers.">
+<meta property="og:url" content="https://itomasmkd.github.io/web-plm-agnet/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agentra – Lifecycle Management for AI Agents">
+<meta name="twitter:description" content="One platform to design, deploy, monitor and retire AI agents in any industry.">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","name":"Agentra","legalName":"Agentra Inc.","url":"https://itomasmkd.github.io/web-plm-agnet/"},
+{"@type":"WebSite","name":"Agentra","url":"https://itomasmkd.github.io/web-plm-agnet/"},
+{"@type":"SoftwareApplication","name":"Agentra","applicationCategory":"BusinessApplication","operatingSystem":"Cloud, On-premises, Linux","description":"Product lifecycle management (PLM) software for AI agents covering design, testing, deployment, monitoring and retirement.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Request a demo"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is lifecycle management for AI agents?","acceptedAnswer":{"@type":"Answer","text":"It is the practice of tracking every AI agent from its first design through testing, deployment, monitoring and retirement, with versions, approvals and audit history in one place."}},
+{"@type":"Question","name":"Where can I run my AI agents?","acceptedAnswer":{"@type":"Answer","text":"On Azure or AWS cloud, inside your own on-premises infrastructure, or on a personal server. The same agent definition works in all three."}},
+{"@type":"Question","name":"Which industries does the platform support?","acceptedAnswer":{"@type":"Answer","text":"Manufacturing, automotive, energy and utilities, finance, healthcare, and automation and robotics."}},
+{"@type":"Question","name":"Is the platform ready for security and compliance reviews?","acceptedAnswer":{"@type":"Answer","text":"Yes. Access control, audit trails and approval gates are built in, so security and compliance teams can review every change."}}
+]}]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#f6f8fd; --surface:#ffffff; --ink:#0a1a3d; --muted:#4b5a7a; --line:#d9e1f2;
+  --navy:#0b2a6f; --blue:#2563ff; --teal:#0e9f8e; --amber:#b7791f; --on-navy:#ffffff;
+  --head:'Bricolage Grotesque','Segoe UI',Arial,sans-serif; --body:'Manrope','Segoe UI',Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#071126; --surface:#0d1b3b; --ink:#eaf0ff; --muted:#a3b2d4; --line:#1f3162;
+    --navy:#0d1b3b; --blue:#6f98ff; --teal:#3fd0bd; --amber:#f0b45a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#071126; --surface:#0d1b3b; --ink:#eaf0ff; --muted:#a3b2d4; --line:#1f3162;
+  --navy:#0d1b3b; --blue:#6f98ff; --teal:#3fd0bd; --amber:#f0b45a;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--body)}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.brand{font:800 1.2rem var(--head);text-decoration:none}
+.brand span{color:var(--blue)}
+.top nav{display:flex;gap:22px;flex-wrap:wrap}
+.top nav a{text-decoration:none;font-weight:500;color:var(--muted)}
+.top nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--blue);color:#fff;font-weight:700;text-decoration:none;padding:13px 24px;border-radius:10px;border:0;cursor:pointer;font-size:1rem;font-family:var(--body)}
+.btn:hover{filter:brightness(1.1)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.top .btn{padding:9px 18px}
+
+/* hero */
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,5.5vw,4rem);font-weight:800}
+.hero p.lead{color:var(--muted);font-size:1.2rem;max-width:34em;margin:20px 0 28px}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+
+/* registry panel: the memorable element */
+.registry{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 20px 50px -24px rgba(11,42,111,.35)}
+.registry header{display:flex;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line);font-weight:700;font-size:.95rem}
+.registry header small{color:var(--muted);font-weight:500}
+.agent{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.agent:last-child{border-bottom:0}
+.agent b{font-family:var(--head);font-size:1.05rem}
+.agent span.meta{grid-column:1;color:var(--muted);font-size:.9rem}
+.chip{grid-row:1/3;grid-column:2;align-self:center;font-size:.8rem;font-weight:700;padding:4px 12px;border-radius:99px;border:1px solid currentColor}
+.live{color:var(--teal)} .test{color:var(--amber)} .old{color:var(--muted)}
+
+/* sections */
+section.block{padding:72px 0}
+section.block h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:700;max-width:18em}
+section.block .sub{color:var(--muted);max-width:40em;margin:14px 0 36px}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+
+/* lifecycle: truly sequential, so it is numbered */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:0;counter-reset:s}
+.steps li{position:relative;padding:28px 14px 0 0;counter-increment:s;border-top:3px solid var(--line)}
+.steps li::before{content:counter(s);position:absolute;top:-15px;left:0;width:27px;height:27px;border-radius:50%;background:var(--blue);color:#fff;font:700 .85rem/27px var(--head);text-align:center}
+.steps li:last-child{border-top-color:var(--blue)}
+.steps b{display:block;font-family:var(--head);font-size:1.1rem;margin-bottom:4px}
+.steps span{color:var(--muted);font-size:.93rem;line-height:1.5;display:block}
+
+/* deploy + features */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:26px}
+.alt .card{background:var(--bg)}
+.card h3{font-size:1.3rem;margin-bottom:8px}
+.card p{margin:0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.tags li{border:1px solid var(--line);background:var(--surface);padding:10px 18px;border-radius:99px;font-weight:500}
+.feat{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 48px;padding:0;margin:0;list-style:none}
+.feat li{padding:14px 0 14px 34px;border-bottom:1px solid var(--line);position:relative;font-weight:500}
+.feat li::before{content:"";position:absolute;left:4px;top:22px;width:12px;height:7px;border-left:3px solid var(--teal);border-bottom:3px solid var(--teal);transform:rotate(-45deg)}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font:700 1.15rem var(--head);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--blue);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin:10px 0 0;max-width:46em}
+
+/* cta + footer */
+.cta{background:var(--navy);color:var(--on-navy);border-radius:20px;padding:56px 32px;text-align:center}
+.cta h2{margin:0 auto 12px;color:#fff}
+.cta p{color:#c6d4f5;margin:0 auto 26px;max-width:32em}
+footer{padding:36px 0 44px;color:var(--muted);font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:36px}
+  .grid3,.feat{grid-template-columns:1fr}
+  .top nav{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Agentra home">Agent<span>ra</span></a>
+    <nav aria-label="Main">
+      <a href="#lifecycle">Lifecycle</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#industries">Industries</a>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn" href="#contact">Request a demo</a>
+  </div>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Manage every AI agent from first draft to retirement.</h1>
+        <p class="lead">A product lifecycle management (PLM) platform built for AI agents. Version, test, deploy and monitor them on cloud, on-premises or personal servers.</p>
+        <div class="row">
+          <a class="btn" href="#contact">Request a demo</a>
+          <a class="btn ghost" href="#lifecycle">See the lifecycle</a>
+        </div>
+      </div>
+      <aside class="registry" aria-label="Example agent registry">
+        <header>Agent registry <small>3 of 41 agents</small></header>
+        <div class="agent"><b>quality-inspector</b><span class="meta">v2.4 · Manufacturing · Azure</span><span class="chip live">Live</span></div>
+        <div class="agent"><b>claims-triage</b><span class="meta">v1.9 · Finance · On-premises</span><span class="chip test">In test</span></div>
+        <div class="agent"><b>route-planner</b><span class="meta">v0.8 · Automotive · AWS</span><span class="chip old">Retired</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="block alt" id="lifecycle">
+    <div class="wrap">
+      <h2>One record for the whole life of an agent</h2>
+      <p class="sub">Every agent moves through the same six stages, with owners, approvals and history attached.</p>
+      <ol class="steps">
+        <li><b>Design</b><span>Define goals, tools and limits.</span></li>
+        <li><b>Build</b><span>Version prompts, models and data.</span></li>
+        <li><b>Test</b><span>Run checks before release.</span></li>
+        <li><b>Deploy</b><span>Ship to cloud, on-premises or a personal server.</span></li>
+        <li><b>Monitor</b><span>Track quality, cost and drift.</span></li>
+        <li><b>Retire</b><span>Archive safely with a full audit trail.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="solutions">
+    <div class="wrap">
+      <h2>Run agents where your work already happens</h2>
+      <p class="sub">The same agent definition deploys to any of these.</p>
+      <div class="grid3">
+        <article class="card"><h3>Cloud</h3><p>Scale on Azure and AWS with managed infrastructure and automatic updates.</p></article>
+        <article class="card"><h3>On-premises</h3><p>Keep agents and data inside your enterprise network.</p></article>
+        <article class="card"><h3>Personal servers</h3><p>A flexible setup for individuals and small businesses.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="industries">
+    <div class="wrap">
+      <h2>Built for industries that cannot afford guesswork</h2>
+      <p class="sub">&nbsp;</p>
+      <ul class="tags">
+        <li>Manufacturing</li><li>Automotive</li><li>Energy &amp; utilities</li><li>Finance</li><li>Healthcare</li><li>Automation &amp; robotics</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="features">
+    <div class="wrap">
+      <h2>What you get</h2>
+      <p class="sub">Everything a team needs to put agents into production and keep them there.</p>
+      <ul class="feat">
+        <li>One PLM for all your AI agents</li>
+        <li>Deploy on cloud, on-premises or personal servers</li>
+        <li>Security and compliance controls built in</li>
+        <li>Scales from startup to enterprise</li>
+        <li>End-to-end lifecycle tracking</li>
+        <li>Audit history for every change</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block alt" id="faq">
+    <div class="wrap">
+      <h2>Questions, answered</h2>
+      <p class="sub">&nbsp;</p>
+      <details><summary>What is lifecycle management for AI agents?</summary><p>It tracks every agent from first design through testing, deployment, monitoring and retirement, with versions, approvals and audit history in one place.</p></details>
+      <details><summary>Where can I run my AI agents?</summary><p>On Azure or AWS, inside your own infrastructure, or on a personal server. The same agent definition works in all three.</p></details>
+      <details><summary>Which industries does the platform support?</summary><p>Manufacturing, automotive, energy and utilities, finance, healthcare, and automation and robotics.</p></details>
+      <details><summary>Is it ready for security and compliance reviews?</summary><p>Yes. Access control, audit trails and approval gates are built in, so reviewers can see every change.</p></details>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <div class="wrap">
+      <div class="cta">
+        <h2>Ready to put your AI agents under control?</h2>
+        <p>Book a demo and see your agents managed from design to retirement.</p>
+        <a class="btn" href="mailto:hello@example.com?subject=Demo%20request">Request a demo</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Agentra Inc. All rights reserved.</span>
+    <span>Lifecycle management for AI agents</span>
+  </div>
+</footer>
+</body>
+</html>
