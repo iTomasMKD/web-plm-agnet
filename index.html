@@ -83,15 +83,23 @@ a{color:inherit}
 .top .btn{padding:9px 18px}
 
 /* hero */
-.hero{padding:72px 0 56px}
+.hero{
+  padding:72px 0 56px;
+  background:
+    radial-gradient(ellipse at 12% 18%,color-mix(in srgb,var(--blue) 18%,transparent),transparent 42%),
+    radial-gradient(ellipse at 88% 28%,color-mix(in srgb,#38bdf8 16%,transparent),transparent 38%),
+    radial-gradient(ellipse at 64% 100%,color-mix(in srgb,#818cf8 13%,transparent),transparent 40%),
+    linear-gradient(125deg,color-mix(in srgb,var(--blue) 7%,var(--bg)),color-mix(in srgb,var(--teal) 5%,var(--bg)) 55%,color-mix(in srgb,#818cf8 8%,var(--bg)));
+  border-bottom:1px solid color-mix(in srgb,var(--blue) 16%,var(--line));
+}
 .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
 .hero h1{font-size:clamp(2.4rem,5.5vw,4rem);font-weight:800}
 .hero p.lead{color:var(--muted);font-size:1.2rem;max-width:34em;margin:20px 0 28px}
 .hero .row{display:flex;gap:12px;flex-wrap:wrap}
 
 /* registry panel: the memorable element */
-.registry{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 20px 50px -24px rgba(11,42,111,.35)}
-.registry header{display:flex;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line);font-weight:700;font-size:.95rem}
+.registry{background:var(--surface);border:1px solid color-mix(in srgb,var(--blue) 24%,var(--line));border-radius:16px;overflow:hidden;box-shadow:0 20px 50px -24px rgba(11,42,111,.35)}
+.registry header{display:flex;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line);background:linear-gradient(105deg,color-mix(in srgb,var(--blue) 10%,var(--surface)),color-mix(in srgb,#38bdf8 8%,var(--surface)) 58%,color-mix(in srgb,#818cf8 9%,var(--surface)));font-weight:700;font-size:.95rem}
 .registry header small{color:var(--muted);font-weight:500}
 .agent{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:14px 18px;border-bottom:1px solid var(--line)}
 .agent:last-child{border-bottom:0}
